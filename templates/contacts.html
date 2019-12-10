@@ -1,0 +1,13 @@
+<form>
+    {% for contact in contacts %}
+
+        <label>
+            <input type='checkbox' name='emails' value='{{ contact.address }}'>
+            {{ contact.title }} - 
+            {{ contact.address }}
+
+        </label>
+        <br/>
+    {% endfor %}
+    <button type='submit'>Submit</button>
+</form>
